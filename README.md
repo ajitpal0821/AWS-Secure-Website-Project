@@ -4,7 +4,8 @@
 This project sets up a secure AWS architecture using a Virtual Private Cloud (VPC) with public and private subnets. The setup ensures high availability, security, and scalability for hosting a website securely in a private subnet.
 
 ### Architecture Diagram
-![aws Secure Website Project drawio](https://github.com/user-attachments/assets/fd5485e4-1956-463f-9277-77f600d34991)
+![image](https://github.com/user-attachments/assets/148927d8-46cc-4fc5-b685-5b5e72ad2f56)
+
 
 
 ### Components:
