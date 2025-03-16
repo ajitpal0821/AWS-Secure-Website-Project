@@ -3,6 +3,16 @@
 ## Overview
 This project sets up a secure AWS architecture using a Virtual Private Cloud (VPC) with public and private subnets. The setup ensures high availability, security, and scalability for hosting a website securely in a private subnet.
 
+### Architecture Diagram
+![AWS Architecture](aws Secure Website Project.drawio.png)
+
+### Components:
+- **Public Subnets**: Contain NAT gateways for outbound internet access.
+- **Private Subnets**: Host EC2 instances in an Auto Scaling group.
+- **Application Load Balancer**: Routes traffic securely to private instances.
+- **Route Tables**: Control traffic routing within subnets.
+- **Auto Scaling Group**: Ensures scalability by automatically adjusting the number of EC2 instances.
+
 ## Deployment Steps
 
 ### Step 1: Create the VPC
