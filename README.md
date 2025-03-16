@@ -60,25 +60,27 @@ This project sets up a secure AWS architecture using a Virtual Private Cloud (VP
    ```
 
 ### Step 7: Setup Website in Private EC2 Instance
-1. Deploy your website on the **private instance**:
+1. Deploy your website on the **private instance** by creating an HTML file:
    ```sh
-   <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>This is an AWS Demo Production</h1>
-</body>
-</html>
+   vim demo.html
    ```
-2. SSH into the Bastion Host:
-```sh
- python3 -m http.server 8000
+2. Add the following content:
+   ```html
+   <!DOCTYPE html>
+   <html>
+   <head>
+   <title>Page Title</title>
+   </head>
+   <body>
+   <h1>This is an AWS Demo Production</h1>
+   </body>
+   </html>
+   ```
+3. Start a Python HTTP server on port 8000:
+   ```sh
+   python3 -m http.server 8000
    ```
    
-
 ### Step 8: Configure Load Balancer
 1. Create a **Load Balancer**.
 2. Create a **Target Group** including private EC2 instances.
